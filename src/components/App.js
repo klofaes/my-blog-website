@@ -20,7 +20,7 @@ const App = () => {
          <Route path="/" exact component={Newsletter} />
          <Route path="/" exact component={List} />
          <Route path="/read" component={Article} />
-         <Route path="/signin" component={Auth} />
+         <Route path="/signup" component={Auth} />
          {/* <Review /> */}
       </Router>
    );

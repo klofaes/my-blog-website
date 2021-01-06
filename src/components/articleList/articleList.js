@@ -13,7 +13,7 @@ class articleList extends Component {
 			const response = await axios.get("http://localhost:5000/");
 			this.setState({articles: response.data});
 		} catch (err) {
-			console.error(`Error!!! ${err}`);
+			console.error(`getArticle-fend ${err}`);
 		}
 	}
 

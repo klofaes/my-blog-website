@@ -7,7 +7,7 @@ router.route("/").get(async (req, res) => {
 		const articles = await Article.find().limit(6); //8
 		res.json(articles);
 	} catch (err) {
-		res.status(400).json(`Error!!! ${err}`);
+		res.status(400).json(`getArticle: ${err}`);
 	}
 });
 

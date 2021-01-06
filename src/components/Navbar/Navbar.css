@@ -47,11 +47,11 @@ a:visited {
 .link {
    border-left: 1px solid black;
    padding: 1rem;
-   padding-left: 4rem;
+   padding-left: 5.5rem;
    padding-right: 4rem;
 }
 
-.link6 {
+.link5 {
    border-right: 1px solid black;
    padding-right: 4rem;
 }

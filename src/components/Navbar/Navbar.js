@@ -23,9 +23,6 @@ const Navbar = () => {
             <Link to="/signin">
                <li href="www.abcd.com" className="link link5">SignIn</li>
             </Link>
-            <Link to="/signup">
-               <li href="www.abcd.com" className="link link6">SignUp</li>
-            </Link>
          </ul>
          <hr />
       </Fragment>

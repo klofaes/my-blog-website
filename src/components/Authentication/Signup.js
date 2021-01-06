@@ -3,7 +3,7 @@ import React, {Component, Fragment} from "react";
 class Signin extends Component {
    constructor(props) {
       super(props);
-      this.state = {userName: '', id: '', password: ''};
+      this.state = {userName: '', id: '', password: '', formType: "signup"};
    }
 
    onFormSubmit(form) {
@@ -16,7 +16,7 @@ class Signin extends Component {
          <Fragment>
             <form onSubmit={data => this.onFormSubmit(data)}>
                <div className="name-field">
-                  <label for="username">Enter UserName: </label>
+                  <label htmlFor="username">Enter UserName: </label>
                   <input
                      id="username"
                      type="text"
@@ -27,7 +27,7 @@ class Signin extends Component {
                   ></input>
                </div>
                <div className="id-field">
-                  <label for="email-id">Enter ID: </label>
+                  <label htmlFor="email-id">Enter ID: </label>
                   <input
                      id="email-id"
                      type="email"
@@ -38,7 +38,7 @@ class Signin extends Component {
                   ></input>
                </div>
                <div className="pass-field">
-                  <label for="password">Enter Password</label>
+                  <label htmlFor="password">Enter Password</label>
                   <input
                      id="password"
                      type="password"

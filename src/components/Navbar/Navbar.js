@@ -11,7 +11,7 @@ const Navbar = () => {
             <Link to="/">
                <li href="www.pacman.live" className="link link1">Home</li>
             </Link>
-            <Link to="/read">
+            <Link to="/compose">
                <li href="www.pacman.live" className="link link2">About</li>
             </Link>
             <Link to="/contact">

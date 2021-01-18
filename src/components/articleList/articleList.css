@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
-.card-secondary {
-   /* border: 1px solid black; */
-}
+/* .articles-container {
+   margin: auto 5rem auto 1rem;
+} */
+
+/* .card-secondary {
+   border: 1px solid black;
+} */
 
 .card-text-list {
    margin: 2rem;
@@ -20,9 +24,21 @@
    font-family: 'Montserrat', sans-serif;
 }
 
+.content {
+   font-family: 'Montserrat', sans-serif;
+   margin: 1rem auto;
+}
+
+.img-list>img {
+   object-fit: fill;
+   max-height: 25rem;
+}
+
 .grid-container {
    display: grid;
    grid-template-columns: 1fr 1fr;
+   /* grid-row-end: span 2; */
+   /* grid-auto-rows: 40rem; */
 }
 
 /* .img-list>img {
@@ -30,8 +46,12 @@
 } */
 
 .posts {
-   margin: 3rem;
-   height: 1fr;
+   margin: 1rem 3rem;
+   /* height: 1fr; */
+}
+
+.posts:nth-child(1), .posts:nth-child(2) {
+   margin-top: 6rem;
 }
 
 /* .sub_heading>h2 {

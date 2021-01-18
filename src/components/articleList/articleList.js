@@ -20,7 +20,9 @@ class articleList extends Component {
 	render() {
 		return (
 			<Fragment>
-				<ShowList data={this.state.articles} ></ShowList>
+				<div className="articles-container">
+					<ShowList data={this.state.articles} ></ShowList>
+				</div>
 			</Fragment>
 		);
 	}

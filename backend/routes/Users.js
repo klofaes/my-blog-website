@@ -2,7 +2,7 @@ const router = require("express").Router();
 
 const bcrypt = require("bcrypt");
 
-let User = require("../models/addUser.model");
+let User = require("../models/User.model");
 
 router.route("/add").post(async (req, res) => {
    try {

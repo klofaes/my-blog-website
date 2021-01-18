@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
 
-const userSchema = new Schema({
+const User = new Schema({
 	userName: {
 		type: String,
 		required: true,
@@ -22,6 +22,6 @@ const userSchema = new Schema({
 	timestamps: true,
 });
 
-const addUser = mongoose.model("user-credentials", userSchema);
+const addUser = mongoose.model("user-credentials", User);
 
 module.exports = addUser;

@@ -30,7 +30,7 @@ class ListCard extends Component {
       return (
          <Fragment>
             {/* <div className="grid-container"></div> */}
-            <div className="posts">
+            <a className="posts" href={"/article/" + this.props.id}>
                <div className="card-secondary grid-item">
                   <div className="img-list">
                      <img src={img} alt={alt} ></img>
@@ -42,7 +42,7 @@ class ListCard extends Component {
                      <p className="views">0 likes</p>
                   </div>
                </div>
-            </div>
+            </a>
          </Fragment>
       );
    }

@@ -11,4 +11,18 @@ router.route("/").get(async (req, res) => {
 	}
 });
 
+router.route("/article").post(async (req, res) => {
+	const id = req.body.pathname;
+	// console.log(id);
+	try {
+		const article = await Article.find({
+			_id: { $eq: id },
+		});
+		// console.log(article);
+		res.json(article);
+	} catch (err) {
+		res.status(400).json("getArticle:", err);
+	}
+});
+
 module.exports = router;

@@ -7,7 +7,7 @@ import FeaturePost from "./FeaturePost/FeaturePost";
 import Newsletter from "./Newsletter/Newsletter";
 // import Review from "./Review/Review";
 import List from "./articleList/articleList";
-// import Article from "./Article/Article";
+import Article from "./Article/Article";
 import Auth from "./Authentication/Auth";
 import Compose from "./Compose/Editor";
 
@@ -19,7 +19,7 @@ const App = () => {
          <Route path="/" exact component={FeaturePost} />
          <Route path="/" exact component={Newsletter} />
          <Route path="/" exact component={List} />
-         {/* <Route path="/read" component={Article} /> */}
+         <Route path="/article" component={Article} />
          <Route path="/signin" component={Auth} />
          <Route path="/compose" component={Compose} />
          {/* <Review /> */}

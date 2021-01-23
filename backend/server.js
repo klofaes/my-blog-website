@@ -27,7 +27,7 @@ connection.once("open", () => {
 const articles = require("./routes/Articles");
 const users = require("./routes/Users");
 
-app.use("/", articles);
+app.use("/articles", articles);
 app.use("/user", users);
 
 const PORT = process.env.PORT || 5000;

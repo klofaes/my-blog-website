@@ -15,40 +15,43 @@ class Signin extends Component {
       return (
          <Fragment>
             <form onSubmit={data => this.onFormSubmit(data)}>
-               <div className="name-field">
-                  <label htmlFor="username">Enter UserName: </label>
-                  <input
-                     id="username"
-                     type="text"
-                     value={this.state.userName}
-                     onChange={(inp) => {
-                        this.setState({userName: inp.target.value});
-                     }}
-                  ></input>
+               <h1 className="heading1">Create Account</h1>
+               <div className="input-fields">
+                  <div className="name-field">
+                     <input
+                        id="username"
+                        type="text"
+                        placeholder="Username"
+                        value={this.state.userName}
+                        onChange={(inp) => {
+                           this.setState({userName: inp.target.value});
+                        }}
+                     ></input>
+                  </div>
+                  <div className="id-field">
+                     <input
+                        id="email-id"
+                        type="email"
+                        placeholder="Email"
+                        value={this.state.id}
+                        onChange={(inp) => {
+                           this.setState({id: inp.target.value});
+                        }}
+                     ></input>
+                  </div>
+                  <div className="pass-field">
+                     <input
+                        id="password"
+                        type="password"
+                        placeholder="Password"
+                        value={this.state.password}
+                        onChange={(inp) => {
+                           this.setState({password: inp.target.value});
+                        }}
+                     ></input>
+                  </div>
                </div>
-               <div className="id-field">
-                  <label htmlFor="email-id">Enter ID: </label>
-                  <input
-                     id="email-id"
-                     type="email"
-                     value={this.state.id}
-                     onChange={(inp) => {
-                        this.setState({id: inp.target.value});
-                     }}
-                  ></input>
-               </div>
-               <div className="pass-field">
-                  <label htmlFor="password">Enter Password</label>
-                  <input
-                     id="password"
-                     type="password"
-                     value={this.state.password}
-                     onChange={(inp) => {
-                        this.setState({password: inp.target.value});
-                     }}
-                  ></input>
-               </div>
-               <input type="submit" value="Submit"></input>
+               <button>Sign Up</button>
             </form>
          </Fragment>
       );

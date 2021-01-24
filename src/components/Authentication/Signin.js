@@ -15,33 +15,32 @@ class Signin extends Component {
 		return (
 			<Fragment>
 				<form onSubmit={data => this.onFormSubmit(data)}>
-					<div className="first user">
-						<label htmlFor="uname-id">Enter username/email-id</label>
-						<input
-							id="uname-id"
-							type="text"
-							value={this.state.user}
-							onChange={(inp) => {
-								this.setState({ user: inp.target.value });
-							}}
-						></input>
+					<h1 className="heading1">Sign in</h1>
+					<div className="input-fields">
+						<div className="first user">
+							<input
+								id="uname-id"
+								type="text"
+								placeholder="Email/Username"
+								value={this.state.user}
+								onChange={(inp) => {
+									this.setState({user: inp.target.value});
+								}}
+							></input>
+						</div>
+						<div className="second pass">
+							<input
+								id="password"
+								type="password"
+								placeholder="Password"
+								value={this.state.password}
+								onChange={(inp) => {
+									this.setState({password: inp.target.value});
+								}}
+							></input>
+						</div>
 					</div>
-					<div className="second pass">
-						<label htmlFor="password">Enter password</label>
-						<input
-							id="password"
-							type="password"
-							value={this.state.password}
-							onChange={(inp) => {
-								this.setState({ password: inp.target.value });
-							}}
-						></input>
-					</div>
-					<input
-						type="submit"
-						className="submit button"
-						value="Submit"
-					></input>
+					<button>Sign In</button>
 				</form>
 			</Fragment>
 		);
